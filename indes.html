@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Redirecting…</title>
+
+  <!-- Fallback: meta-refresh -->
+  <meta http-equiv="refresh" content="0;url=https://corrupt.im">
+
+  <script>
+    // Preserve path, query, and hash in redirect
+    (function(){
+      var path = window.location.pathname || "";
+      var search = window.location.search || "";
+      var hash = window.location.hash || "";
+      var target = "https://corrupt.im" + path + search + hash;
+      window.location.replace(target);
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecting to <a href="https://corrupt.im">https://corrupt.im</a>…</p>
+  <noscript>
+    <p>JavaScript is disabled — click <a href="https://corrupt.im">here</a> to continue.</p>
+  </noscript>
+</body>
+</html>
